@@ -1,0 +1,11 @@
+created: 20191126193517800
+creator: asnukal
+modified: 20191126223558226
+modifier: asnukal
+tags: 
+title: fswatch auto commit for this wiki
+type: text/vnd.tiddlywiki
+
+Delete later so you don't confuse anyone...
+
+``fswatch -0 . -r -e "Draft.*" -e "\.git" -e "\.DS_Store" -e "backups" -e "git-auto-commit.sh" -e "\$__.*.tid" | xargs -0 -n 1 -I {} ./git-auto-commit.sh -c {}``
